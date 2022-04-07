@@ -3,3 +3,17 @@
     object-position: center;
     height: 100vh;
 }
+
+#system {
+    margin-right: 2cm;
+}
+
+nav .nav-link:hover {
+    background: blue;
+}
+
+footer .active:hover {
+    background: black;
+    width: 6cm;
+    height: 3cm;
+}
