@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="less.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -21,7 +26,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#overview">Overview</a>
+                        <a class="nav-link active" aria-current="page" href="#overview">
+                             Overview
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#system">Body System</a>
@@ -62,8 +69,8 @@
                 </button>
             </div>
         </div>
-        <div class="container-fluid" style="margin-right: 20px;">
-            <div id="overview" class="container-fluid text-white text-center p-5 m-3" style="padding-top: 100px; padding-bottom: 30px; padding-left: 30px; background-image: url('./images/design.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="container-fluid" style="margin-right: 20px;" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div id="overview" class="container-fluid text-white text-center p-5 m-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" style="padding-top: 100px; padding-bottom: 30px; padding-left: 30px; background-image: url('./images/design.jpg'); background-size: cover; background-repeat: no-repeat;">
                 <h1 class="text-warning text-center">WHAT IS MENSTRUATION</h1>
                 <p class="text-start text-white" style="font-size: 20px;">
                     Menstruation is the monthly flow of blood from the uterus through the vagina. It means a girl is growing up and her body is preparing for the future when she might get pregnant and have babies. It is commonly referred to as Period, a natural bodily function,
@@ -74,7 +81,7 @@
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
                                KEY WORDS
                             </button>
                         </h2>
@@ -96,47 +103,44 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="lifecycle">
-                    <h2 class="text-primary text-center mt-5">LIFE CYCLE</h2>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    MENSTRUAL CYCLE
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div id="lifecycle" class="container   text-center p-5 " style="background-image: url('./images/background1.jpg'); background-repeat: no-repeat; background-size: cover; color: white; margin-top: 3.5cm;">
-                                        <h1 class="text-center" style="color: chartreuse;">WHAT AGE DOES MENSTRUATION STARTS AND ENDS</h1>
-                                        <p style="font-size: 25px; padding-top: 60px;" class="text-start">
-                                            All girls go through a pre-menarche stage. This is the time before menstruation begins. Typically girls start to menstruate during puberty or adolescence, usually between the ages of<b style="color: hotpink;"> 10 and 19</b>.
-                                            A delay in the onset of menstruation is normal. Most girls will have regular menstruation from age <b style="color: hotpink;"> 16 to 18</b>. A woman can expect to see her menstrual period continuously until
-                                            she reaches her menopause. This usually begins when she approaches her late 40s and 50s.</p>
-                                        <h2 class="text-center" style="color: chartreuse;">HOW WELL DO YOU KNOW YOUR CYCLE?</h2>
-                                        <p style="font-size: 25px; padding-top: 35px; line-height: 1cm;" class="text-center">The time from the first day of a girl’s menstruation (when bleeding starts) to the first day of her next menstruation is usually 28 days (one month), but this can range from 21-35 days. this interval is known as
-                                            menstrual cycle. It is important to keep track of your cycle to prepare for your menstruation and avoid uncomfortable situations
-                                        </p>
-                                        <img src="./images/cycle.jpg" alt="image of reproductive cycle" style="width: 10cm; height: 7cm;">
-                                        <p style="font-size: 25px; padding-top: 50px; line-height: 1cm;">It is normal and natural to experience mood changes during your menstrual cycle; the changing levels of hormones during a girl’s cycle can affect her moods. This is known as PMS short for Pre- Menstrual Syndrome.
-                                            Not all girls get this, but some do a few days before they start their menstruation, You can manage your mood changes by educating those close to you on your situation so they know how to relate to you during
-                                            this time. Laughing, exercising, deep breathing and stretching are all ways to relax so that your moods are better managed
-                                        </p>
-                                        <h3 class="text-center  pt-5" style="color: chartreuse;">WHAT HAPPENS DURING MENSTRUAL CYCLE? </h3>
-                                        <p style="font-size: 25px; padding-top: 15px;" class="text-center"> Females of reproductive age experience cycles of hormonal activity that repeat at about one-month intervals. With every cycle, a woman's body prepares for a potential pregnancy, whether or not that is the woman's
-                                            intention. The term menstruation refers to the periodic shedding of the uterine lining. (Menstru means "monthly.'') The average menstrual cycle takes about 28 days and occurs in phases: the follicular phase,
-                                            the ovulatory phase (ovulation), and the luteal phase. There are four major hormones (chemicals that stimulate or regulate the activity of cells or organs) involved in the menstrual cycle: follicle-stimulating
-                                            hormone, luteinizing hormone, estrogen, and progesterone
-                                        </p>
-                                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                MENSTRUAL CYCLE
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div id="lifecycle" class="container   text-center p-5 " style="background-image: url('./images/background1.jpg'); background-repeat: no-repeat; background-size: cover; color: white; margin-top: 3.5cm;">
+                                    <h1 class="text-center" style="color: chartreuse;">WHAT AGE DOES MENSTRUATION STARTS AND ENDS</h1>
+                                    <p style="font-size: 25px; padding-top: 60px;" class="text-start">
+                                        All girls go through a pre-menarche stage. This is the time before menstruation begins. Typically girls start to menstruate during puberty or adolescence, usually between the ages of<b style="color: hotpink;"> 10 and 19</b>.
+                                        A delay in the onset of menstruation is normal. Most girls will have regular menstruation from age <b style="color: hotpink;"> 16 to 18</b>. A woman can expect to see her menstrual period continuously until she
+                                        reaches her menopause. This usually begins when she approaches her late 40s and 50s.</p>
+                                    <h2 class="text-center" style="color: chartreuse;">HOW WELL DO YOU KNOW YOUR CYCLE?</h2>
+                                    <p style="font-size: 25px; padding-top: 35px; line-height: 1cm;" class="text-center">The time from the first day of a girl’s menstruation (when bleeding starts) to the first day of her next menstruation is usually 28 days (one month), but this can range from 21-35 days. this interval is known as menstrual
+                                        cycle. It is important to keep track of your cycle to prepare for your menstruation and avoid uncomfortable situations
+                                    </p>
+                                    <img src="./images/cycle.jpg" alt="image of reproductive cycle" style="width: 10cm; height: 7cm;">
+                                    <p style="font-size: 25px; padding-top: 50px; line-height: 1cm;">It is normal and natural to experience mood changes during your menstrual cycle; the changing levels of hormones during a girl’s cycle can affect her moods. This is known as PMS short for Pre- Menstrual Syndrome. Not
+                                        all girls get this, but some do a few days before they start their menstruation, You can manage your mood changes by educating those close to you on your situation so they know how to relate to you during this time.
+                                        Laughing, exercising, deep breathing and stretching are all ways to relax so that your moods are better managed
+                                    </p>
+                                    <h3 class="text-center  pt-5" style="color: chartreuse;">WHAT HAPPENS DURING MENSTRUAL CYCLE? </h3>
+                                    <p style="font-size: 25px; padding-top: 15px;" class="text-center"> Females of reproductive age experience cycles of hormonal activity that repeat at about one-month intervals. With every cycle, a woman's body prepares for a potential pregnancy, whether or not that is the woman's intention.
+                                        The term menstruation refers to the periodic shedding of the uterine lining. (Menstru means "monthly.'') The average menstrual cycle takes about 28 days and occurs in phases: the follicular phase, the ovulatory
+                                        phase (ovulation), and the luteal phase. There are four major hormones (chemicals that stimulate or regulate the activity of cells or organs) involved in the menstrual cycle: follicle-stimulating hormone, luteinizing
+                                        hormone, estrogen, and progesterone
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <div id="system" class="container-fluid  text-center p-5 bg-white me-5 m-3" style="background-image: url('./images/background7.jpg'); background-repeat: no-repeat; background-size: cover; color: black;">
+            <div id="system" class="container-fluid  text-center p-5 bg-white me-5 m-3" style="background-image: url('./images/background7.jpg'); background-repeat: no-repeat; background-size: cover; color: black;" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <h1 class=" text-center text-primary ">THE FEMALE REPRODUCTIVE SYSTEM </h1>
                 <p style="font-size: 25px; padding-top: 30px;" class="text-center">Your menstrual cycle is the interval between your first and your next menstrual period. On average, the length of the menstrual cycle is 28 days, but generally this varies from woman to woman. Regular cycles that are longer or shorter
                     than this, from 21-35 days, are normal.
@@ -149,13 +153,13 @@
         <div id="learnMore" class="container-fluid mt-5">
             <h1 class="text-center text-primary">MENSTRUAL HYGIENE AND RISK</h1>
             <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
+                <div class="accordion-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     MENSTRUAL HYGIENE MANAGEMENT
                 </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="container-fluid bg-primary text-center p-5 m-3" style="background-image: url( './images/background1.jpg'); background-repeat: no-repeat; background-size: cover; color: white;">
                                 <p class="text-start" style="font-size: 25px; padding-top: 50px; line-height: 1cm;">Menstrual hygiene management is when you understand good menstrual hygiene behaviours and practise them. You know you are practicing good menstrual hygiene management when you have: <br> • An understanding of basic facts
@@ -178,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         MENSTRUAL HYGIENE MATERIALS                
@@ -227,7 +231,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="butto" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                        MENSTRUATION AND PERSONAL HYGIENE
@@ -268,7 +272,7 @@
 
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         POOR MENSTRUAL HYGIENE MANAGEMENT POTENTIAL RISK
@@ -300,7 +304,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h2 class="accordion-header" id="headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         Diet
@@ -356,7 +360,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+
+                <div class="accordion-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h2 class="accordion-header" id="headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         MORE INFORMATION
@@ -390,12 +395,20 @@
         </div>
     </div>
     <footer>
-        <div class="bg-warning" style="height: 8.5cm;">
-            <h2 class="text-center" style="padding-top: 3cm;">REFERENCE</h2>
-            <p class="text-center" style="font-size: 30px; padding-top: 30px;">For more information visit <a class="active" href="https://resource-centre-uploads.s3.amazonaws.com/uploads/menstrual_hygiene_management_operational_guidelines.pdf" style="text-decoration: none;">Resource Center</a></p>
+        <div class="bg-warning" style="height: 8.5cm;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2 class="text-center" style="padding-top: 3cm; font-weight: 1000;" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                REFERENCE
+            </h2>
+            <p class="text-center" style="font-size: 30px; padding-top: 30px;" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">For more information visit <a class="active" href="https://resource-centre-uploads.s3.amazonaws.com/uploads/menstrual_hygiene_management_operational_guidelines.pdf" style="text-decoration: none;">Resource Center</a></p>
         </div>
     </footer>
     <script src="js/bootstrap.min.js "></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
 
 </html>
