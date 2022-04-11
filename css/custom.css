@@ -9,7 +9,7 @@
 }
 
 nav .nav-link:hover {
-    background: blue;
+    background: white;
 }
 
 footer .active:hover {
@@ -17,3 +17,4 @@ footer .active:hover {
     width: 6cm;
     height: 3cm;
 }
+

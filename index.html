@@ -8,7 +8,7 @@
     <title>Menstrual Health Education</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid pb-3" style="background-image: url('./images/background0.jpg'); background-repeat: no-repeat; background-size: cover; color: white;">
+    <div class="container-fluid pb-3" style="background-color: white; color: white;">
         <div class="container-fluid text-white text-center bg-dark mt-1">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="container-fluid" style="margin-right: 20px;">
-            <div id="overview" class="container-fluid text-white text-center p-5 m-3" style="padding-top: 100px; padding-bottom: 30px; padding-left: 30px; background-image: url('./images/design.jpg'); background-size: cover; background-repeat: no-repeat;">
+            <div id="overview" data-aos="flip-right" data-aos-delay="500" class="container-fluid text-white text-center p-5 m-3" style="padding-top: 100px; padding-bottom: 30px; padding-left: 30px; background-image: url('./images/design.jpg'); background-size: cover; background-repeat: no-repeat;">
                 <h1 class="text-warning text-center">WHAT IS MENSTRUATION</h1>
                 <p class="text-start text-white" style="font-size: 20px;">
                     Menstruation is the monthly flow of blood from the uterus through the vagina. It means a girl is growing up and her body is preparing for the future when she might get pregnant and have babies. It is commonly referred to as Period, a natural bodily function,
@@ -106,7 +106,7 @@
                                     MENSTRUAL CYCLE
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div id="lifecycle" class="container   text-center p-5 " style="background-image: url('./images/background1.jpg'); background-repeat: no-repeat; background-size: cover; color: white; margin-top: 3.5cm;">
                                         <h1 class="text-center" style="color: chartreuse;">WHAT AGE DOES MENSTRUATION STARTS AND ENDS</h1>
@@ -146,7 +146,8 @@
                 </div>
             </div>
         </div>
-        <div id="learnMore" class="container-fluid mt-5">
+
+        <div id="learnMore" class="container-fluid mt-5" style="box-shadow: 0px 25px 35px;">
             <h1 class="text-center text-primary">MENSTRUAL HYGIENE AND RISK</h1>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -155,7 +156,7 @@
                     MENSTRUAL HYGIENE MANAGEMENT
                 </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="container-fluid bg-primary text-center p-5 m-3" style="background-image: url( './images/background1.jpg'); background-repeat: no-repeat; background-size: cover; color: white;">
                                 <p class="text-start" style="font-size: 25px; padding-top: 50px; line-height: 1cm;">Menstrual hygiene management is when you understand good menstrual hygiene behaviours and practise them. You know you are practicing good menstrual hygiene management when you have: <br> • An understanding of basic facts
@@ -279,8 +280,8 @@
                             <div class="container-fluid text-center text-dark p-5 m-3" style="background-image: url( './images/background5.jpg'); background-repeat: no-repeat; background-size: cover; color: white;">
                                 <p style="font-size: 25px; padding-top: 50px; line-height: 1cm; " class="text-start ">It is important to know some indicators to look out for in order to detect, seek medical attention and treat infections while they are still in their early stages. Vaginal discharge is normal. The different discharges may
                                     be a result of your menstrual cycle or different changes your body and hormones are going through. Normal vaginal discharge can be thin and clear, long and stringy or thick and mucous like. It is also normal when discharge
-                                    appears cloudy or yellowish when dry on clothing. However you should seek medical attention, when you notice the following from your vagina. <br> <br> • Discharge accompanied by itching, rash or soreness <br> • Persistent
-                                    increased discharge <br> • White, lumpy discharge (like curds) <br> • Grey/white or yellow/green discharge with a bad smell
+                                    appears cloudy or yellowish when dry on clothing. However you should seek medical attention, when you notice the following from your vagina. <br> <br> • Discharge accompanied by itching, rash or soreness
+                                    <br> • Persistent increased discharge <br> • White, lumpy discharge (like curds) <br> • Grey/white or yellow/green discharge with a bad smell
                                 </p> <br>
 
                                 <h2 class="text-center pt-4">WHAT TO DO DURING MENSTRUATION</h2>
@@ -389,12 +390,16 @@
         </div>
     </div>
     <footer>
-        <div class="bg-warning" style="height: 8.5cm;">
+        <div class="bg-warning" style="height: 8.5cm;" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <h2 class="text-center" style="padding-top: 3cm;">REFERENCE</h2>
             <p class="text-center" style="font-size: 30px; padding-top: 30px;">For more information visit <a class="active" href="https://resource-centre-uploads.s3.amazonaws.com/uploads/menstrual_hygiene_management_operational_guidelines.pdf" style="text-decoration: none;">Resource Center</a></p>
         </div>
     </footer>
     <script src="js/bootstrap.min.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
